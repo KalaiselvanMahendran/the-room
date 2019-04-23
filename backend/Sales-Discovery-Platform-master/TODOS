@@ -1,0 +1,10 @@
+1. In csv upload of users, the company filed in TemporaryUserProfile is set automatically from the company field in
+    the UserProfile of the currently logged in user.
+
+    If the user has not updated his company filed in user profile, this can break
+
+    TODO : Need to Permission class describing whether the user has verified and filled all necessary details in the user profile, and adding this permission to csv_userprofiles_upload API
+
+
+2.  TODO:  CsvUserProfileUploadView  uses sendmail fuction in the same thread. This should be made asynchronous, otherwise the request will timeout
+           We can use django-mailer with some other job scheduler like Celery.
