@@ -89,8 +89,7 @@ function App(props) {
       <img src={svg} alt="welcome" className="setimage" />
       {checklogeed() ? null : (
         <GoogleLogin
-          clientId="536396675108-2tq1acvjm7ratu56hqachkm3j322r6a7.apps.googleusercontent.com"
-          render={renderProps => (
+           render={renderProps => (
             <button
               className="newLoginBtn--google"
               onClick={renderProps.onClick}
