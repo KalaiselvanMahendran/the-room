@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@vtex/react-csv-parse": "^3.0.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "csv-parser": "^2.2.0",
     "filepond": "^3.9.0",
     "font-awesome": "^4.7.0",
